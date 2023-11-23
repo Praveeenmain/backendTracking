@@ -1,0 +1,8 @@
+[build]
+  command = "npm run start" # This should match the command to start your server
+  publish = "path/to/your/public/folder" # Path to your app's built files, if any
+
+[[redirects]] # Redirects configuration if needed
+  from = "/*"
+  to = "/index.html"
+  status = 200
