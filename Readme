@@ -54,7 +54,5 @@ JWT_SECRET: Secret key for JWT token signing.
 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements or bug fixes.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Feel free to customize the sections based on your specific project requirements. This README provides a general structure to guide users and contributors through setup, usage, and contribution to your backend project hosted on Render.com.
+
