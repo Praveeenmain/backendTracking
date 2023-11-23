@@ -1,0 +1,60 @@
+Courier Backend
+
+This repository contains the backend code for a courier tracking sy
+stem, providing API endpoints for user authentication, package tracking, and event management.
+
+Description
+The backend is built using Node.js with Express.js framework. It utilizes SQLite as the database for storing user information, package details, and event logs. Authentication is handled using JSON Web Tokens (JWT), and password hashing is implemented using bcrypt for security.
+
+Setup and Installation
+To set up this project locally, follow these steps:
+
+Clone the repository:
+
+bash
+Copy code
+git clone <repository_url>
+cd courier-backend
+Install dependencies:
+
+bash
+Copy code
+npm install
+Set up the database:
+
+Ensure you have SQLite installed or update the database configuration in courier.db.
+
+Start the server:
+
+bash
+Copy code
+npm start
+Usage
+Endpoints
+/login: User authentication endpoint. POST request with username and password.
+/profile: Fetch user profile details. Requires JWT authentication.
+/users: Create new users. Requires JWT authentication.
+/trackingNumber/:number: Get package details by tracking number. Requires JWT authentication.
+/events/:trackNumber: Get package events by tracking number. Requires JWT authentication.
+/trackingNumber/: Create new package tracking details. Requires JWT authentication.
+/trackingNumber/:number: Update package tracking details. Requires JWT authentication.
+/trackingNumber/:number: Delete package tracking details. Requires JWT authentication.
+/events/:trackNumber: Delete package events. Requires JWT authentication.
+Authentication
+All authenticated endpoints require a valid JWT token passed in the Authorization header as Bearer YOUR_JWT_TOKEN.
+
+Hosting
+This backend is hosted on Render.com. You can access it at: Backend Hosted URL
+
+Environment Variables
+Make sure to set the following environment variables:
+
+DB_PATH: Path to your SQLite database file.
+JWT_SECRET: Secret key for JWT token signing.
+Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests for improvements or bug fixes.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Feel free to customize the sections based on your specific project requirements. This README provides a general structure to guide users and contributors through setup, usage, and contribution to your backend project hosted on Render.com.
